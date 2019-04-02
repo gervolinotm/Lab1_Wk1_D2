@@ -65,3 +65,35 @@ def number_to_full_month_name(num_month)
   end
   return month
 end
+
+def number_to_short_month_name(num_month)
+  case num_month
+  when 1
+    short_month = "Jan"
+  when 2
+    short_month = "Feb"
+  when 3
+    short_month = "Mar"
+  when 4
+    short_month = "Apr"
+  when 5
+    short_month = "May"
+  when 6
+    short_month = "Jun"
+  when 7
+    short_month = "Jul"
+  when 8
+    short_month = "Aug"
+  when 9
+    short_month = "Sep"
+  when 10
+    short_month = "Oct"
+  when 11
+    short_month = "Nov"
+  when 12
+    short_month = "Dec"
+  esle
+    return "invalid"
+  end
+  return short_month
+end
