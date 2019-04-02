@@ -87,7 +87,10 @@ class FunctionsTest < MiniTest::Test
     assert_equal( 27 , result_cube )
   end
 
-  
+  def test_volume_of_sphere()
+    result_sphere = volume_of_sphere( 10 )
+    assert_equal( 4188.79, result_sphere.round(2))
+  end
   # #Further
   #
   # #Given the length of a side of a cube calculate the volume
