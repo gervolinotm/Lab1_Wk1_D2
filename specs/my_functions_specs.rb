@@ -91,6 +91,11 @@ class FunctionsTest < MiniTest::Test
     result_sphere = volume_of_sphere( 10 )
     assert_equal( 4188.79, result_sphere.round(2))
   end
+
+  def test_fahrenheit_to_celsius()
+    result_celsius = fahrenheit_to_celsius( 68 )
+    assert_equal( 20 , result_celsius )
+  end
   # #Further
   #
   # #Given the length of a side of a cube calculate the volume
